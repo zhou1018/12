@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -10,20 +10,20 @@ export default function Home() {
             <div className="mx-auto max-w-2xl">
               <div className="max-w-lg">
                 <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                  专业法律服务，守护您的权益
+                  Professional Legal Services, Protecting Your Rights
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  我们是一支经验丰富的律师团队，致力于为客户提供专业、高效的法律服务。无论是个人还是企业，我们都能为您提供全方位的法律支持。
+                  We are an experienced team of lawyers dedicated to providing professional and efficient legal services. Whether you are an individual or a business, we can provide comprehensive legal support.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <Link
-                    href="/contact"
+                    href="/en/contact"
                     className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
-                    联系我们
+                    Contact Us
                   </Link>
-                  <Link href="/services" className="text-sm font-semibold leading-6 text-gray-900">
-                    了解更多 <span aria-hidden="true">→</span>
+                  <Link href="/en/services" className="text-sm font-semibold leading-6 text-gray-900">
+                    Learn More <span aria-hidden="true">→</span>
                   </Link>
                 </div>
               </div>
@@ -35,28 +35,28 @@ export default function Home() {
       {/* Services section */}
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-24 sm:py-32">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">专业服务</h2>
+          <h2 className="text-base font-semibold leading-7 text-indigo-600">Professional Services</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            全方位的法律服务
+            Comprehensive Legal Services
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            我们提供全面的法律服务，包括但不限于以下领域：
+            We provide comprehensive legal services, including but not limited to:
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
             {[
               {
-                name: '商事法律服务',
-                description: '为企业提供全方位的法律支持，包括公司设立、并购重组、股权激励等。',
+                name: 'Commercial Legal Services',
+                description: 'Providing comprehensive legal support for businesses, including company formation, M&A, and equity incentives.',
               },
               {
-                name: '知识产权保护',
-                description: '提供专利、商标、著作权等知识产权的申请、保护和管理服务。',
+                name: 'Intellectual Property Protection',
+                description: 'Offering services for patent, trademark, and copyright applications, protection, and management.',
               },
               {
-                name: '争议解决',
-                description: '通过诉讼、仲裁、调解等多种方式，帮助客户解决各类法律纠纷。',
+                name: 'Dispute Resolution',
+                description: 'Helping clients resolve various legal disputes through litigation, arbitration, and mediation.',
               },
             ].map((feature) => (
               <div key={feature.name} className="flex flex-col">
@@ -76,27 +76,27 @@ export default function Home() {
       <div className="bg-gray-50 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">专业团队</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Professional Team</h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              我们的团队由经验丰富的律师组成，他们在各自领域都有深厚的专业背景和丰富的实践经验。
+              Our team consists of experienced lawyers with deep professional backgrounds and rich practical experience in their respective fields.
             </p>
           </div>
           <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             {[
               {
-                name: '张律师',
-                role: '合伙人',
-                description: '专注于商事法律领域，拥有超过15年的执业经验。',
+                name: 'Mr. Zhang',
+                role: 'Partner',
+                description: 'Specializes in commercial law with over 15 years of practice experience.',
               },
               {
-                name: '李律师',
-                role: '资深律师',
-                description: '知识产权专家，曾处理多起重大知识产权案件。',
+                name: 'Ms. Li',
+                role: 'Senior Attorney',
+                description: 'Intellectual property expert with experience in handling major IP cases.',
               },
               {
-                name: '王律师',
-                role: '资深律师',
-                description: '争议解决专家，擅长处理复杂的商业纠纷。',
+                name: 'Mr. Wang',
+                role: 'Senior Attorney',
+                description: 'Dispute resolution expert, skilled in handling complex commercial disputes.',
               },
             ].map((person) => (
               <div key={person.name} className="flex flex-col items-start">
@@ -114,4 +114,4 @@ export default function Home() {
       </div>
     </div>
   );
-}
+} 
