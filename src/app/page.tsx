@@ -12,6 +12,9 @@ export default function Home() {
                 <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                   专业法律服务，守护您的权益
                 </h1>
+                <p className="mt-2 text-xl text-indigo-600">
+                  值得信赖的法律伙伴
+                </p>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                   我们是一支经验丰富的律师团队，致力于为客户提供专业、高效的法律服务。无论是个人还是企业，我们都能为您提供全方位的法律支持。
                 </p>
