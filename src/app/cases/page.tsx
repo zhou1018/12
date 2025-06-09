@@ -1,4 +1,13 @@
-const cases = [
+interface CaseItem {
+  id: number;
+  title: string;
+  description: string;
+  process: string[];
+  result: string;
+  category: string;
+}
+
+const cases: CaseItem[] = [
   {
     id: 1,
     title: '某大型企业并购重组项目',
